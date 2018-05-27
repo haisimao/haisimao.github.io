@@ -1,0 +1,60 @@
+非关系型数据库 -redis高速缓存 / MongoDB结构不严谨价值不高 / Hbase图数据库 / Neo4j列族数据库
+
+服务器登录密码199301Ac#
+
+bgsave 手动保存数据
+keys * 查看所有键
+select 0~15 切换不同的库
+
+redis里的键全是字符串,values是其他数据类型
+
+关系型数据库里数据底层是有锁的,为保证数据在更新时的正确性
+
+redis 的字符串可以存JSON格式的字符串 --应用:投票,查询缓存
+数字也已字符串存取,
+
+redis 的列表做消息队列
+
+读写分离 建立多个redis数据库服务器 一个Marster(读) 多个slaves(写) 
+slaves可以访问Master的数据(只读),Master 可以读数据进行读写
+
+info replication --查看服务器的角色
+
+72哨兵                    修改防火墙的哨兵改端口
+当master挂掉以后,需要一个或多个哨兵从多个slaves中选出一个master,并且修改这个服务器的配置文件,在原来的master经过设定的时间没有回来的话,它也会变为slave(被修改配置文件)
+
+绑定地址用内网172.16.252.77,访问用公网
+
+JS 数据库建表,查询 Linux基本命令
+
+哨兵配置文件
+bind 172.18.61.250
+port 26379
+sentinel monitor mymaster 120.77.222.217 11225 1
+sentinel down-after-milliseconds mymaster 5000 
+sentinel auth-pass mymaster 1qaz2wsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

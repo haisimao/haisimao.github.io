@@ -1,0 +1,24 @@
+redis是一个非关系型数据库
+
+cp redis.
+vim myredis.conf 
+
+redis-server myredis.conf &  开启redis 服务器 (myredis.conf是我们已经修改过得配置文件)(requirepass foobared ,bind,port)
+
+ps -ef | redis.conf
+
+redis-server myredis.conf > myredis.log &  
+
+jobs
+****
+redis-cli -p 9999 -h 172.16.252.77  客户端连接到端口9999,客户端绑定到IP
+
+auth 199301Ac~  输入密码
+****
+退出服务器
+quit
+jobs
+fg %1
+Ctrl + C
+
+file redis-3.2.11

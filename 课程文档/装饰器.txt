@@ -1,0 +1,15 @@
+格式: 
+def de_func(func):
+    def decorator(*args,**others):
+        func(*args)
+    
+    return decorator
+
+  
+@de_func(key)             #装饰器本质上是一个函数,de_func是一个函数装饰                            器可以有参数，无参数的话 括号可以不带#以上                                @de_func写法等同于  func =de_fun(func) 
+                           如果带参数就是 func = de_fun(arg)(func)
+
+def func(*args,**others):    
+     pass                 
+
+func(*args)  # de_func(key)(func)(*args) ->这也是一个闭包,key,func后面的函数还可以继续访问

@@ -1,0 +1,74 @@
+#放图片 
+<figure>
+	<img src="" alt="" />
+	<figcaption>
+				
+	</figcaption>
+			
+</figure>
+
+width--属性名: 200px--属性值;
+
+字体
+font-family(字体)
+font-style(字体样式)
+font-size(字体大小)
+font-weight(字体粗细)
+
+文本
+color
+text-align(对其文本元素)
+letter-spacing(字符间距)
+text-decoration(设置文本修饰-下划线)
+
+盒子模型:最重要
+padding(内边距,透明)
+border(边框)
+margin(外边距,透明)
+content(内容)
+display(元素显示,改变元素类型(块or行)inlne-block)
+width(宽度)
+height(高度)
+background-image(背景图)
+background-color(背景色)
+* content--padding--border--background-img--bakground-color--margin * 
+伪类
+visibility(可见性)
+float:left(浮动属性:脱离文档流,可以将块级元素尽量放到一行,如果放不下,就往下一行放,--而不用display)clear:both;/*清除浮动  --left--right--both*/
+
+列表
+list-style(列表属性[type,position,image])
+list-style-position(列表中列表项标志的位置)
+
+边框
+border -collapse(表格合并边框)
+***************************************
+选择器:
+    1)标签选择器-对所有的h1标签生效
+    2)ID选择器:只对指定ID的标签有效
+    3)类选择器:只对指定的class属性标签生效
+    4)后代选择器:只有在指定ID下面的div才有效        ['>'号表示只能是ID的直接子类[如果是           空格:表示所有的子类(孙子什么的)有效]
+    5)伪类:.center>input:hover
+    6)并列选择器:对他们做同样的事情
+    7)通配符选择器:对所有的元素有效
+    8)平级兄弟选择器:.calss~h2(对所有平级的      h2有效
+    9)相邻兄弟选择器:.class+h2(对h2相邻的有      效
+
+    层叠样式表:效果会一层一层的叠加---如果效果有冲突--遵循下面的原则
+     1)就近原则
+     2)具体性原则(通配符选择器<标签选择器<类选择器<id选择器)
+     3)重要性原则
+
+层叠样式表基于Box Model:每个元素都是一个盒子
+*******************************************
+/*块级(block)元素/行级(内联)元素(inline)*/        
+static-正常文档流*/
+
+relative-相对定位(相对于元素原来的位置,没有脱离文档流,不影响兄弟元素输出)*/
+
+absolute-绝对定位(相对于父级元素来设置位置,脱离了文档流,对兄弟元素有影响)*/
+
+fixed-固定定位(相对于浏览器窗口来设置元素位置,脱离了文档流)*/
+
+
+

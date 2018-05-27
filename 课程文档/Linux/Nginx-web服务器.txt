@@ -1,0 +1,23 @@
+Nginx:实现通讯,向服务器发送url,服务器会将url指向的资源传输给客户端.url其实是一个信息,其中有资源路径,头文件等等参数.客户端与服务器通讯,传输数据.
+
+nginx   启动nginx服务器
+cd /usr/share/nginx/html   nginx服务器放要访问的html文件的路径,网站打开                                的目录的当前目录是html目录,其它要写全路径
+
+yum list installed |grep Nginx,,yum install nginx  安装nginx
+
+nginx   启动nginx
+
+cd /etc/nginx,,,vim nginx.conf    修改配置文件 port/bind
+
+ps -ef |grep nginx      ---  找到nginx进程,干掉该进程,重启nginx进程
+
+kill -9 15016          ---  这里要结束的是nginx: master process的进程ID
+
+ps -auf | grep nginx
+
+
+
+
+
+
+
