@@ -1,0 +1,96 @@
+高内聚,低耦合
+
+python的web框架: Flask,Django,Tornado,Pyramid,Bottle,Web2py,Web.py
+
+MVC(MTV): 模型-视图-控制器,做到模型（数据）和视图（显示）解耦合 --数据显示分离
+     通过控制器，将数据和显示分离，好处是同一个视图可以加载不同的模型，同一个模型也可以显示成不同的视图
+     稍具规模的系统都会使用MVC架构或者它的变体（MVP、MVVM等）
+     它是对面向对象设计原则中迪米特法则的一个最好的践行
+     MVC是一个理念.
+
+虚拟环境:
+使不同应用开发环境独立
+环境升级不影响其他应用，也不会影响全局的python环境
+防止系统中出现包管理混乱和版本冲突
+
+虚拟环境下:有python 的所有东西 ,还可以安装其他的库和模块
+
+********************************************************************
+
+创建项目文件夹 ->进入项目文件夹->python -m(加载) venv 环境名 --虚拟创建环境
+
+进入虚拟环境(cd 环境名) -> 激活虚拟环境(运行activate.bat/deactivate.bat)
+
+-> pip install django==2.0(安装软件时用两个等号指定版本)(在虚拟环境下安装django依赖库) -> 
+回到主目录建立项目 -> django-admin startproject 项目名目录 .-> python manage.py runserver  -> python manage.py 项目名-> 在配置文件里面注册 项目(访问用) ->创建应用 python manage.py startapp 应用名
+ -修改settings.py和urls.py
+
+先建文件夹,进入文件夹,建立虚拟环境,source venv/bin/activate激活虚拟环境,django-admin startproject 项目名,开启服务器python mannage.py runserver 0.0.0.0:80(写这个可以自动找到本机的IP地址) 
+
+进入虚拟环境目录,建立项目目录(startproject)
+,建立项目(manage.py 项目名),写urls,settings网站访问用
+创建应用(startapp和项目名在同级目录),写views动态网站
+501  mkdir hello_django
+502  cd hello_django/
+503  python3 -m venv hd_venv
+504  source hd_venv/bin/activate
+508  python -m pip install --upgrade pip
+510  pip install django
+511  django-admin --version
+513  django-admin startproject 项目名
+514  python manage.py startapp 应用
+
+
+Dept.objects.all().order_by('-no')[0:3] -- 排序,limit 3(切片)
+Dept.objects.fillter(no__gt=30).filter(no__lt=60) -- 过滤
+
+发自己的SQL语句查询: Dept.objects.raw('select name from tb_dept')原始查询
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

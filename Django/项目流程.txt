@@ -1,0 +1,38 @@
+用pychram建立一个新项目 -> 
+进入后台python manage.py startapp 应用 ->
+安装mysql,pip install PyMySQL,修改项目文件里的__init__ -> 
+在数据库服务器建立一个数据库 ->
+修改项目文件夹里的settings.py -> 
+建立模型models,迁移模型python manage.py makemigrations syst(应用名),python manage.py migrate -> 
+建立管理员账号python manage.py createsuperuser ->
+修改应用的admin.py,注册管理类 在管理员界面显示表 ->
+添加表 ->
+创建url ->
+做视图views.py ->
+做模板*.html ->
+
+
+
+
+
+
+
+
+在Python manege.py shell 下面查询表
+from syst.models import Dept
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
