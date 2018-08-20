@@ -1,5 +1,0 @@
-启动：systemctl start mariadb
-关闭：systemctl stop mariadb
-进入mysql:mysql -u root -p,之后会让输入密码，密码为‘空’直接回车
-或者直接输入:mysql
-退出mysql:quit
